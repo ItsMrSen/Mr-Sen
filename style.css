@@ -39,7 +39,15 @@ body{
     background-color: #febd01;
     bottom: 0px;
 }
-
+.text-center{
+    text-align: center!important;
+}
+.text-left{
+    text-align: left!important;
+}
+.text-right{
+    text-align: right!important;
+}
 /*Header*/
 
 header{
@@ -286,5 +294,256 @@ header .navbar ul li a.active::before{
 /*Services*/
 .services{
     background-color: #f5f8fd;
-    padding: 100px 0px;
+    padding: 100px 0px 70px;
+}
+.services .section-title h1::before{
+    left: 30%;
+}
+.services .service-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services .service-content .box{
+    background-color: #ffffff;
+    padding: 20px;
+    flex: 0 0 calc(20% - 50%);
+    max-width: 0 0 calc(20% - 50%);
+    margin-left: 18%;
+    border: 1px solid #f8f8f8;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+.services .service-content .box::before{
+    content: '';
+    height: 2px;
+    background-color: #febd01;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    transition: all .5s ease;
+}
+.services .service-content .box:hover::before{
+    width: 100%;
+}
+.services .service-content .box .icon{
+    height: 60px;
+    width: 60px;
+    background-color: #febd01;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.services .service-content .box .icon .fa{
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 60px;
+}
+.services .service-content .box .h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0px;
+}
+.services .service-content .box .p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: grey;
+    margin: 10px 0 0;
+}
+
+/*Skills*/
+
+.skills{
+    padding: 100px 15px;
+    background-color: #ffffff;
+}
+.skills .skills-content{
+    flex:  0 0 50%;
+    max-width: 50%;
+    padding-right: 40px;
+}
+.align-items-center{
+    align-items: center;
+}
+.skills .img{
+    background-color: blue;
+    flex:  0 0 50%;
+    max-width: 50%;
+}
+.skills .img img{
+    width: 100%;
+    display: block;
+}
+.skills .skills-content .section-title p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: grey;
+    margin: 15px 0 0px;
+}
+.skills .skills-content .skill-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.skills .skills-content .skill-box h6{
+    font-size: 16px;
+    font-weight: 500px;
+    color: gray;
+    margin: 0 0 8px;
+}
+.skills .skills-content .skill-box .skill-bar{
+    height: 5px;
+    background-color: rgb(231, 229, 229);
+    position: relative;
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in{
+    background-color: #febd01;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span{
+    color: #838383;
+    font-size: 16px;
+    font-weight: 400px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+/*Contact*/
+.contact-us{
+    padding: 100px 30px;
+    background-color: #f5f8fd;
+}
+.contact-us .section-title h1::before{
+    left: 30%;
+}
+.contact-us .contact-form{
+    background-color: #ffffff;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 40px;
+    border: 1px solid #eeeeee;
+}
+.contact-us .contact-form .text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.contact-us .contact-form .text h2{
+    font-size: 26px;
+    font-weight: 600px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.contact-us .contact-form .text p{
+    font-size: 15px;
+    font-weight: 400px;
+    line-height: 24px;
+    color: #838383;
+    margin: 0px;
+}
+.contact-us .contact-form .space-between{
+    justify-content: space-between;
+}
+.contact-us .contact-form .col-6{
+    flex: 0 0 100%;
+    max-width: 50%;
+    padding: 5px;
+}
+.contact-us .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact-us .contact-form .form-control{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #eeeeee;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'Squada One', cursive;
+}
+.contact-us .contact-form textarea .form-control{
+    height: 140px;
+}
+.contact-us .contact-form .form-control::placeholder{
+    color: #838383;
+}
+.contact-us .contact-form .button{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact-us .contact-form .button a{
+    border-radius: 4px;
+    color: #000000;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600px;
+    transition: all .5s ease;
+    background-color:  #febd01;
+    box-shadow: 0px 10px 15px #e8e8e8;
+}
+.contact-us .contact-form .button a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Footer */
+footer{
+    padding: 70px 15px;
+    background-color: #0c0c17;
+}
+footer .logo{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 700px;
+}
+footer .social{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+footer .social a{
+    color: #999999;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 12px;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+footer .social a:hover{
+    color: #ffffff;
+}
+/* Copyright*/
+
+.copyright{
+    background-color: #0c0c17;
+    border: 1px solid #1d1d27;
+    padding: 15px;
+}
+.copyright p{
+    color: #e5f503;
+    margin: 0px;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 14px;
 }
